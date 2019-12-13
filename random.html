@@ -1,21 +1,35 @@
-<!doctype html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script type="text/javascript" src="logic.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/logic.js"></script>
+    <title>Random numbers</title>
 </head>
+
 
 <body>
     <div class="container">
         <div class="box">
-            <label> Resultado dos números aleatorios: </label>
-            <label id="numR"></label>
-            <button type="button" onclick="random()"> Gerar numeros</button>
+            <h1>Quantidade de números desejados:</h1>
+
+            <div>
+                <input type="text" #inputNumber name="inputNumber" id="inputNumber" placeholder="valor">
+                <button class="button" onclick="Input(inputNumber.value)">Gerar Números</button>
+            </div>
+
+            <div>
+                <h3>Números aleatorios</h3>
+            </div>
+
+            <div>
+                <h3>Ordenados crescente</h3>
+            </div>
+
+            <div>
+                <h3>Ordenados descrescente</h3>
+            </div>
         </div>
     </div>
-    
 </body>
 
 </html>
